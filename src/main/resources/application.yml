@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: kaixuanlu
+    type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+    cache: false
+    prefix: classpath:/template/
+    suffix: .html
+    mode: HTML5
+    encoding: UTF-8
+
+server:
+  port: 8000
+
+mybatis:
+  typeAliasesPackage: com.openstack_4j.network.model
+  mapperLocations: classpath:mapper/*.xml
